@@ -15,10 +15,11 @@ public class ChangeBackgroundActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_background);
+
     }
 
     public void onGoClick(View view) {
-        View mainView = findViewById(android.R.id.content);
+        View mainView = findViewById(R.id.mainView);
         mainView.setBackgroundColor(getNextColor());
     }
 
